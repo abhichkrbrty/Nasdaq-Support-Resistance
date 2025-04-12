@@ -1,0 +1,12 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Local dev files
+helper.py
+v1_workingcode.py
+
