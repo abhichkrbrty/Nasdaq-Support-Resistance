@@ -1,12 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
-import sys
-import os
-
-# Setup for module import
+import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.sr_detection import get_support_resistance
+
+from sr_zones.utils.sr_detection import get_support_resistance
 
 # Page config
 st.set_page_config(page_title="NASDAQ Support & Resistance", layout="wide")

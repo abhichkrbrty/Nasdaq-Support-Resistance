@@ -1,12 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
-import os
-import sys
-
-# Relative import setup
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from app.macd_divergence.utils.helper import load_data, calculate_macd
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from macd_divergence.utils.helper import load_data, calculate_macd
 
 # Page config
 st.set_page_config(page_title="MACD Divergence Detector", layout="wide")

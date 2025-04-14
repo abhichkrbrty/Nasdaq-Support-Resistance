@@ -1,13 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
-import os
-import sys
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Setup for relative import
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
-from app.rsi_zones.utils.helper import load_data, calculate_rsi
+from rsi_zones.utils.helper import load_data, calculate_rsi
 
 # --- Page Config ---
 st.set_page_config(page_title="RSI Reversal Zones Visualizer", layout="wide")

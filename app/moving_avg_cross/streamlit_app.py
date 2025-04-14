@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-import sys
-import os
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from moving_avg_cross.utils.helper import load_data, calculate_moving_averages, get_crossovers
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
-from app.moving_avg_cross.utils.helper import load_data, calculate_moving_averages, get_crossovers
 
 # Page Config
 st.set_page_config(page_title="Moving Average Crossover Detector", layout="wide")

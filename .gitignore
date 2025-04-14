@@ -7,6 +7,5 @@ __pycache__/
 .env
 
 # Local dev files
-helper.py
 v1_workingcode.py
 
